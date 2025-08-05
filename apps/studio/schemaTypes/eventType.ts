@@ -43,6 +43,7 @@ export const eventType = defineType({
         list: [
           {title: 'In Person', value: 'in-person'},
           {title: 'Virtual', value: 'virtual'},
+          {title: 'Hybrid', value: 'hybrid'},
         ],
         layout: 'radio',
       },
@@ -98,6 +99,12 @@ export const eventType = defineType({
       name: 'tickets',
       type: 'url',
       group: 'editorial',
+    }),
+    defineField({
+      name: 'firstPublished',
+      description: 'Automatically set when first published',
+      type: 'datetime',
+      readOnly: true,
     }),
   ],
   preview: {
