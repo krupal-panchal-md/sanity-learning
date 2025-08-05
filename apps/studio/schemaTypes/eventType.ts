@@ -50,6 +50,15 @@ export const eventType = defineType({
       group: 'details',
     }),
     defineField({
+      name: 'format',
+      type: 'string',
+      options: {
+        list: ['in-person', 'virtual'],
+        layout: 'radio',
+      },
+      group: 'details',
+    }),
+    defineField({
       name: 'date',
       type: 'datetime',
       group: 'details',
